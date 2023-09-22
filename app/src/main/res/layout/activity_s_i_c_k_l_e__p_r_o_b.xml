@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonfordesease"
+    tools:context=".SICKLE_PROB">
+
+    <TextView
+        android:id="@+id/textaboutsickle"
+        android:layout_width="380dp"
+        android:layout_height="341dp"
+        android:text="Sickle cell anemia is an inherited red blood cell disorder in which there aren't enough healthy red blood cells to carry oxygen throughout your body. Normally, the flexible, round red blood cells move easily through blood vessels. In sickle cell anemia, the red blood are shaped like sickles or crescent moons."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:text="Is mom/dad sick?"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textaboutsickle"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <CheckBox
+        android:id="@+id/sickle_mom_yes"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="YES"
+        android:textColor="#F886FC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/sickle_mom_no"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="NO"
+        android:textColor="#F886FC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sickle_mom_yes"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <CheckBox
+        android:id="@+id/sickle_dad_yes"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="YES"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sickle_mom_yes"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/sickle_dad_no"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="NO"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sickle_mom_no"
+        app:layout_constraintTop_toBottomOf="@+id/sickle_dad_yes"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <ImageView
+        android:id="@+id/BABY2"
+        android:onClick="text"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sickle_dad_yes"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/babyyy" />
+
+    <TextView
+        android:id="@+id/TEXT_sickle"
+        android:layout_width="405dp"
+        android:layout_height="156dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BABY2"
+        app:layout_constraintVertical_bias="0.784"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/to_hyp"
+        android:onClick="to_hyp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotationY="181"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/abc_vector_test" />
+</androidx.constraintlayout.widget.ConstraintLayout>

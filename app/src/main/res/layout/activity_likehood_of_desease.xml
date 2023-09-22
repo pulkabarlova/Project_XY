@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".likehood_of_desease">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="444dp"
+        android:layout_height="905dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_ground" />
+
+    <ImageView
+        android:id="@+id/hemm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="onhem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019"
+        app:srcCompat="@drawable/palez" />
+
+    <ImageView
+        android:id="@+id/sickle"
+        android:onClick="onsickle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="624dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/kr" />
+
+    <ImageView
+        android:id="@+id/hyp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sickle"
+        app:layout_constraintVertical_bias="0.094"
+        app:srcCompat="@drawable/hh" />
+
+    <ImageView
+        android:id="@+id/phen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hyp"
+        app:layout_constraintVertical_bias="0.131"
+        app:srcCompat="@drawable/v" />
+
+    <ImageView
+        android:id="@+id/dal"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phen"
+        app:layout_constraintVertical_bias="0.281"
+        app:srcCompat="@drawable/glaz" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hemophilia"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toEndOf="@+id/hemm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        tools:text="Hemophilia" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="219dp"
+        android:layout_height="76dp"
+        android:text="Sickle cell anemia"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toEndOf="@+id/sickle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22"
+        tools:text="Sickle cell anemia" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="216dp"
+        android:layout_height="58dp"
+        android:text="Hypertrichosis"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toEndOf="@+id/hyp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        tools:text="Hypertrichosis" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="238dp"
+        android:layout_height="62dp"
+        android:text="Phenylketonuria"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toEndOf="@+id/phen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583"
+        tools:text="Phenylketonuria" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="147dp"
+        android:layout_height="38dp"
+        android:text="Daltonism"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toEndOf="@+id/dal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        tools:text="Daltonism" />
+
+    <CheckBox
+        android:id="@+id/sickle_mom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOM"
+        android:textColor="#FF80EE"
+        android:textColorLink="#FF80EE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:text="MOM" />
+
+    <CheckBox
+        android:id="@+id/phen_mom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOM"
+        android:textColor="#FF80EE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        tools:text="MOM" />
+
+    <CheckBox
+        android:id="@+id/dal_mom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOM"
+        android:textColor="#FF80EE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        tools:text="MOM" />
+
+    <CheckBox
+        android:id="@+id/phen_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAD"
+        android:textColor="#2196F3"
+        android:textColorLink="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678"
+        tools:text="DAD" />
+
+    <CheckBox
+        android:id="@+id/dal_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAD"
+        android:textColor="#2196F3"
+        android:textColorLink="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        tools:text="DAD" />
+
+    <CheckBox
+        android:id="@+id/hyp_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAD"
+        android:textColor="#2196F3"
+        android:textColorLink="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DAD" />
+
+    <CheckBox
+        android:id="@+id/hem_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAD"
+        android:textColor="#2196F3"
+        android:textColorHighlight="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14"
+        tools:text="DAD" />
+
+    <CheckBox
+        android:id="@+id/sickle_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAD"
+        android:textColor="#2196F3"
+        android:textColorLink="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:text="DAD" />
+
+    <ImageView
+        android:id="@+id/nextt"
+        android:onClick="mainperehod"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotationY="181"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
